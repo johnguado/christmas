@@ -185,7 +185,7 @@ class Christmas extends Component {
         el.contentWindow.document.write("<style type='text/css'> pre {display: inline;} </style>")
 
         for (let i = 0; i < this.lines.length; i++) {
-            el.contentWindow.document.write("<div style=\"font-size: 22px\"><pre inline>")
+            el.contentWindow.document.write("<div style=\"font-size: 12px\"><pre inline>")
             for (let j = 0; j < this.lines[i].length; j++) {
                 el.contentWindow.document.write(this.lines[i][j])
                 await timer(this.intervals[i][0])
@@ -207,12 +207,11 @@ class Christmas extends Component {
                         <button className="button" onClick={this.clickAction} >Click Here</button>
                     }
                 </div>
-                <div>
-                    <iframe id="target" title='christmasFrame' height="2000" width="800" border='2px' />
+                <div className="iframeField">
+                    <iframe id="target" title='christmasFrame' height="2000" width="100%" border='2px' />
                 </div>
             </div>
         )
     }
 }
-
 export default Christmas

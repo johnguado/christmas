@@ -13,6 +13,21 @@
     height: 70px;
 }
 
-.iframe {
+.iframeField {
     margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    min-width: 100vw;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+}
+
+div {
+    height: 100%;
+    width: 100%;
 }
