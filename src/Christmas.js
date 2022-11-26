@@ -80,7 +80,7 @@ class Christmas extends Component {
         "    /=========\\        __  __                        /_/    _",
         "    /  *   *  \\        \\ \\/ /        /\\  /\\    __ _  ____  | |",
         "  i/ O   i   O \\i       \\  /   __   /  \\/  \\  / _` |/ ___\\ |_|",
-        "  /=============\\       /  \\  |__| / /\  /\\ \\| (_| |\\___ \\  _",
+        "  /=============\\       /  \\  |__| / /\\  /\\ \\| (_| |\\___ \\  _",
         "  /  O   i   O  \\      /_/\\_\\      \\ \\ \\/ / / \\__,_|\\____/ |_|",
         "i/ *   O   O   * \\i",
         "/=================\\i",
@@ -201,7 +201,12 @@ class Christmas extends Component {
     render() {
         return (
             <div>
-                {!this.state.buttonClicked && <button className='button' onClick={this.clickAction} >Click Here</button>}
+                <div className="buttonField">
+                    {!this.state.buttonClicked
+                        &&
+                        <button className="button" onClick={this.clickAction} >Click Here</button>
+                    }
+                </div>
                 <div>
                     <iframe id="target" title='christmasFrame' height="2000" width="800" border='2px' />
                 </div>
