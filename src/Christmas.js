@@ -15,8 +15,8 @@ class Christmas extends Component {
     }
 
     lines = [
-        "Merry Chrismas John",
-        "My Christmas present is 1 month free rent.",
+        "Merry Chrismas John,",
+        "Have 1 month free rent and this display string concatenation.",
         "3.",
         "2.",
         "1.",
@@ -67,7 +67,26 @@ class Christmas extends Component {
         "everything is going my way",
         "everything is going my way",
         "everything is going",
-        "my wayyyyyyyy-yyyyyyyyyyy-yyyyyyy"
+        "my wayyyyyyyy-yyyyyyyyyyy-yyyyyyy",
+        "----------------------- END -------------------------------",
+        "         |",
+        "        -+-",
+        "         A",
+        "        /=\\               /\\  /\\    ___  _ __  _ __ __    __",
+        "      i/ O \\i            /  \\/  \\  / _ \\| '__|| '__|\\ \\  / /",
+        "      /=====\\           / /\\  /\\ \\|  __/| |   | |    \\ \\/ /",
+        "      /  i  \\           \\ \\ \\/ / / \\___/|_|   |_|     \\  /",
+        "    i/ O * O \\i                                       / /",
+        "    /=========\\        __  __                        /_/    _",
+        "    /  *   *  \\        \\ \\/ /        /\\  /\\    __ _  ____  | |",
+        "  i/ O   i   O \\i       \\  /   __   /  \\/  \\  / _` |/ ___\\ |_|",
+        "  /=============\\       /  \\  |__| / /\  /\\ \\| (_| |\\___ \\  _",
+        "  /  O   i   O  \\      /_/\\_\\      \\ \\ \\/ / / \\__,_|\\____/ |_|",
+        "i/ *   O   O   * \\i",
+        "/=================\\i",
+        "       |___|",
+        "Website source code here if interested.",
+        "https://www.github.com/johnguado/christmas"
     ]
 
     charBreakDefault = 70
@@ -75,16 +94,16 @@ class Christmas extends Component {
 
 
     intervals = [
-        // [this.charBreakDefault, this.lineBreakDefault],
-        // [this.charBreakDefault, this.lineBreakDefault],
-        // [this.charBreakDefault, this.lineBreakDefault],
-        // [this.charBreakDefault, this.lineBreakDefault],
-        // [this.charBreakDefault, this.lineBreakDefault], //
-        [0, 0],
-        [0, 0],
-        [0, 0],
-        [0, 0],
-        [0, 0],
+        [20, this.lineBreakDefault],
+        [20, this.lineBreakDefault],
+        [this.charBreakDefault, this.lineBreakDefault],
+        [this.charBreakDefault, this.lineBreakDefault],
+        [this.charBreakDefault, this.lineBreakDefault], //
+        // [0, 0],
+        // [0, 0],
+        // [0, 0],
+        // [0, 0],
+        // [0, 0],
         [80, 1400], //down
         [this.charBreakDefault, 1400], //frown
         [this.charBreakDefault, this.lineBreakDefault], //behind
@@ -123,33 +142,55 @@ class Christmas extends Component {
         [this.charBreakDefault, 1500],//
         [this.charBreakDefault, 1000],//everbody
         [this.charBreakDefault, 1000],//penis
-        [this.charBreakDefault, 1400],//way
+        [this.charBreakDefault, 1400],//away
         [this.charBreakDefault, 500],//penis
-        [this.charBreakDefault, 500],//stay
-        [this.charBreakDefault, 100],//counts
+        [this.charBreakDefault, 1000],//stay
+        [this.charBreakDefault, 1000],//counts
         [this.charBreakDefault, 1000],//day
-        [this.charBreakDefault, 3000],//penis
-        [this.charBreakDefault, 2000],//way
-        [this.charBreakDefault, 2000],//way
+        [this.charBreakDefault, 2000],//penis
+        [this.charBreakDefault, 1500],//way
+        [this.charBreakDefault, 1500],//way
         [100, 100],//going
-        [150, 100]//wayyyyyy
+        [150, 100],//wayyyyyy
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0]
     ]
 
     async clickAction() {
         this.setState({ buttonClicked: true })
         let el = document.getElementById("target")
-        el.contentDocument.body.style.fontFamily = "Arial"
         el.contentWindow.document.open()
 
         let audio = new Audio(sound);
         audio.volume = 0.5
 
+        el.contentWindow.document.write("<style type='text/css'> pre {display: inline;} </style>")
+
         for (let i = 0; i < this.lines.length; i++) {
+            el.contentWindow.document.write("<div style=\"font-size: 22px\"><pre inline>")
             for (let j = 0; j < this.lines[i].length; j++) {
                 el.contentWindow.document.write(this.lines[i][j])
                 await timer(this.intervals[i][0])
             }
-            el.contentWindow.document.write("<br>")
+            el.contentWindow.document.write("</pre></div>")
             await timer(this.intervals[i][1])
             if (i === 4) {
                 audio.play()
@@ -157,13 +198,12 @@ class Christmas extends Component {
         }
     }
 
-
     render() {
         return (
             <div>
                 {!this.state.buttonClicked && <button className='button' onClick={this.clickAction} >Click Here</button>}
                 <div>
-                    <iframe id="target" title='christmasFrame' height="1200" width="800" border='2px' />
+                    <iframe id="target" title='christmasFrame' height="2000" width="800" border='2px' />
                 </div>
             </div>
         )
