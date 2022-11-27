@@ -85,13 +85,12 @@ class Christmas extends Component {
         "i/ *   O   O   * \\i",
         "/=================\\i",
         "       |___|",
-        "Website source code here if interested.",
+        "Website source code here.",
         "https://www.github.com/johnguado/christmas"
     ]
 
     charBreakDefault = 70
     lineBreakDefault = 800
-
 
     intervals = [
         [20, this.lineBreakDefault],
@@ -208,7 +207,7 @@ class Christmas extends Component {
                     }
                 </div>
                 <div className="iframeField">
-                    <iframe id="target" title='christmasFrame' height="2000" width="100%" border='2px' />
+                    <iframe id="target" title='christmasFrame' height="1100" width="100%" border='2px' />
                 </div>
             </div>
         )
