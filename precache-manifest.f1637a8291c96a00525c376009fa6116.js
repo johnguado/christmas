@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5361ffc8c922062e7809",
-    "url": "/christmas/static/css/main.6c0d3ad6.chunk.css"
+    "revision": "e38c9b1f371cabee187e",
+    "url": "/christmas/static/css/main.80e5a6cb.chunk.css"
   },
   {
-    "revision": "5361ffc8c922062e7809",
-    "url": "/christmas/static/js/main.5361ffc8.chunk.js"
+    "revision": "e38c9b1f371cabee187e",
+    "url": "/christmas/static/js/main.e38c9b1f.chunk.js"
   },
   {
     "revision": "e45e0075b0567c8b67a9",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/christmas/static/media/music.db4afa0b.mp3"
   },
   {
-    "revision": "6fc9e664863731548598fbd96bb6fc9c",
+    "revision": "d55e391699d3af891aa7e1e83756401c",
     "url": "/christmas/index.html"
   }
 ];
