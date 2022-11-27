@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/christmas/static/media/music.db4afa0b.mp3"
   },
   {
-    "revision": "989f311847fab337e12b7d5ab8722424",
+    "revision": "c4fc334e810d202c0b6c557c7d4b58a4",
     "url": "/christmas/index.html"
   }
 ];
