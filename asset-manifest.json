@@ -1,7 +1,7 @@
 {
   "main.css": "/christmas/static/css/main.267d7bf8.chunk.css",
-  "main.js": "/christmas/static/js/main.c05e996d.chunk.js",
-  "main.js.map": "/christmas/static/js/main.c05e996d.chunk.js.map",
+  "main.js": "/christmas/static/js/main.ad094071.chunk.js",
+  "main.js.map": "/christmas/static/js/main.ad094071.chunk.js.map",
   "static/js/1.e45e0075.chunk.js": "/christmas/static/js/1.e45e0075.chunk.js",
   "static/js/1.e45e0075.chunk.js.map": "/christmas/static/js/1.e45e0075.chunk.js.map",
   "static/js/2.a166ce7d.chunk.js": "/christmas/static/js/2.a166ce7d.chunk.js",
@@ -12,6 +12,6 @@
   "static/media/music.mp3": "/christmas/static/media/music.db4afa0b.mp3",
   "static/css/main.267d7bf8.chunk.css.map": "/christmas/static/css/main.267d7bf8.chunk.css.map",
   "index.html": "/christmas/index.html",
-  "precache-manifest.cde7fcc4f73c1e7363f0dab84b51cc64.js": "/christmas/precache-manifest.cde7fcc4f73c1e7363f0dab84b51cc64.js",
+  "precache-manifest.2ccd31a1879604911a746c99a37196dd.js": "/christmas/precache-manifest.2ccd31a1879604911a746c99a37196dd.js",
   "service-worker.js": "/christmas/service-worker.js"
 }
