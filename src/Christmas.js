@@ -16,20 +16,20 @@ class Christmas extends Component {
 
     lines = [
         "Merry Chrismas John,",
-        "Have 1 month free rent and this display string concatenation.",
+        "Have 1 month free rent and this display of string concatenation.",
         "3.",
         "2.",
         "1.",
         "Whenever life gets you down",
         "keeps you wearing a frown",
         "and the gravy train has left you behiiiiindddddd",
-        "and when youre all out of hope",
+        "and when you're all out of hope",
         "down at the end of your rope",
-        "and nobodys there to throw you a liiiiiiiineeeeeeeeee",
+        "and nobody's there to throw you a liiiiiiiineeeeeeeeee",
         "If you ever get so low that you dont know which way to go",
         "come on and take a walk in my shoeeeeees",
         "Never worry about a thing got the world on a string",
-        "cause ive got the cure for all of my blueeeeeeeees",
+        "cause I've got the cure for all of my blueeeeeeeees",
         "I take a look at my enormous p****",
         "and my troubles start melting away",
         "I take a look at my enormous p****",
@@ -184,12 +184,12 @@ class Christmas extends Component {
         el.contentWindow.document.write("<style type='text/css'> pre {display: inline;} </style>")
 
         for (let i = 0; i < this.lines.length; i++) {
-            el.contentWindow.document.write("<div style=\"font-size: 12px\"><pre inline>")
+            el.contentWindow.document.write(`<div id=row-number-${i} style=\"font-size: 12px\" /><pre inline />`)
             for (let j = 0; j < this.lines[i].length; j++) {
                 el.contentWindow.document.write(this.lines[i][j])
                 await timer(this.intervals[i][0])
             }
-            el.contentWindow.document.write("</pre></div>")
+            el.contentWindow.document.write("</div>")
             await timer(this.intervals[i][1])
             if (i === 4) {
                 audio.play()
